@@ -15,9 +15,9 @@ webc:
 
 haproxy:
     image: haproxy:latest
-    volumes:
-        - ./haproxy:/haproxy-override
-        - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    #volumes:
+     #   - ./haproxy:/haproxy-override
+       # - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
     links:
         - weba
         - webb
