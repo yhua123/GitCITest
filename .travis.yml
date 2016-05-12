@@ -11,3 +11,7 @@ services:
 install:
 
 - docker-compose up
+
+script:
+- docker images
+- docker ps
