@@ -13,5 +13,4 @@ install:
 - docker-compose up
 
 script:
-- docker images
-- docker ps
+- docker ps | grep -q haproxy
