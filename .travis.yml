@@ -10,7 +10,7 @@ services:
 
 install:
 
-- docker-compose up
+- docker-compose -d up
 
 script:
 - docker ps | grep -q haproxy
