@@ -14,7 +14,8 @@ webc:
         - 80
 
 haproxy:
-    image: haproxy:latest
+    build: ./haproxy
+    #image: haproxy:latest
     #volumes:
      #   - ./haproxy:/haproxy-override
        # - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
