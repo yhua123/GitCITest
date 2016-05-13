@@ -14,4 +14,4 @@ install:
 
 script:
 - docker ps | grep -q haproxy
-- go run tests/test.go
+- go run tests/test.go http://localhost/
