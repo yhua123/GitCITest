@@ -26,7 +26,7 @@ func main() {
         if strings.Contains(string(b), "HAlala") {
           fmt.Printf("sucess!\n")
         } else {
-            Exit(1)
+            return false
         }
 
     }
