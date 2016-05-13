@@ -1,8 +1,8 @@
-language: python
+language: go
 
-python:
+go:
+- 1.6.2
 
-- 2.7
 
 services:
 
@@ -14,3 +14,4 @@ install:
 
 script:
 - docker ps | grep -q haproxy
+- go run tests/test.go
