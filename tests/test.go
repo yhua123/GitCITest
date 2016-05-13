@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+    Exit(1)
     for _, url := range os.Args[1:] {
         resp, err := http.Get(url)
         if err != nil {
